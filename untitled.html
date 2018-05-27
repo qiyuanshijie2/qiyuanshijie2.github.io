@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<link href="front.css" rel="stylesheet" type="text/css"/>
+	<link rel="icon" href="ass.ico" type="image/x-icon"/>
+
+<title>无标题文档</title>
+<script language="javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+<div id="floaters" onMouseOut="MM_showHideLayers('floaters','','hide','floatsymbel','','show')">此处显示  id "floaters" 的内容</div>
+
+<div id="header">
+	<div id="floatsymbel" onClick="MM_showHideLayers('floaters','','show','floatsymbel','','hide')">
+	<img src="logofinallysqure2.jpg" class="logo" alt="" /></div>
+	<b>起源视界</b>
+	</div>
+<div id="bodyer">
+<div id="sider">此处显示  id "sider" 的内容</div>
+此处显示id bodyer的内容</div>
+<div id="footer">此处显示  id "footer" 的内容</div>
+</html>
