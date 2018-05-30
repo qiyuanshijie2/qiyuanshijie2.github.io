@@ -30,7 +30,7 @@
 #bodyer{
 	float: top;
 	width: 80%;
-	height: 6000px;
+	height: 600px;
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
@@ -62,10 +62,10 @@
 	cursor:pointer;
 	top:0px;
 	left: 0px;
-	height:60px;
+	height:40px;
 	
 }
-.logo{height: 60px;
+.logo{height: 45px;
 
 	;
 }
