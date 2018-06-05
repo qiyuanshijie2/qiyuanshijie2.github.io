@@ -3,17 +3,17 @@
 	width: 100%;
 	padding-left: 0px;
 	padding-right: 0px;
+	left: 0px;
+	right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
 	text-align: left ;
 	font-size: 40px;
 	font-weight: 400;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	color: #ffffff;
-	margin-left: 0px;
-	margin-right: 0px;
 	font-style: normal;
 	background-color: #000000;
-	left: 0px;
-	right: 0px;
 	position: fixed;
 }
 #sider{
