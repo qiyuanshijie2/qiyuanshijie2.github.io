@@ -16,6 +16,13 @@
 	background-color: #000000;
 	position: fixed;
 }
+#logo{
+	width:35px;
+}
+#floatsymbel{
+	float: left;
+	height:40px;
+}
 #sider{
 	background-color: #0D99F3;
 	float: right;
@@ -45,15 +52,6 @@
 	text-align: center;
 	z-index:inherit;
 	
-}
-#floatsymbel{
-	float: left;
-	top:0px;
-	left: 0px;
-	height:40px;
-	
-}
-.logo{height: 45px;
 }
 #usererea{
 	background-color:#00ff00;
