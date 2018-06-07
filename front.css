@@ -7,28 +7,39 @@
 	right: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
+	/*去除边框*/
 	text-align: left ;
-	font-size: 40px;
-	font-weight: 400;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	color: #ffffff;
-	font-style: normal;
 	background-color: #000000;
 	position: fixed;
 }
+/*定义标志*/
 #logo{
-	width:35px;
+	height: 45px;
 }
 #floatsymbel{
 	float: left;
 	height:40px;
 }
+/*定义用户区域*/
+#usererea{
+	background-color:#00ff00;
+	float:right;
+	height:46px;
+	width:30%;
+}
+.users{
+	float:left;
+	width:20%;
+}
+
 #avatar{
 }
 #informs{
 }
 #warn{
 }
+/*请转移到include页面*/
 #sider{
 	background-color: #0D99F3;
 	float: right;
@@ -59,13 +70,4 @@
 	z-index:inherit;
 	
 }
-#usererea{
-	background-color:#00ff00;
-	float:right;
-	height:46px;
-	width:30%;
-}
-.users{
-	float:left;
-	width:10%;
-}
+
