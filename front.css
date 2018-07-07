@@ -8,7 +8,7 @@ div,body{
 }
 #header {
 	top: 0px;
-	
+	opacity: 0.95;
 	/*去除边框*/
 	width: 100%;
 	text-align: left ;
@@ -73,8 +73,8 @@ div,body{
 	display:none;
 }
 #graffiti{
-	border:0;
-	float:top;
+	border: 0;
+	float: top;
 	top: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
@@ -83,7 +83,8 @@ div,body{
 	margin-left: 0px;
 	margin-right: 0px;
 	/*去除边框*/
-	width:100%;
+	width: 100%;
+	margin-top: 35px;
 }
 #sorts{
 	background-color: rgba(255,212,212,0.3);
