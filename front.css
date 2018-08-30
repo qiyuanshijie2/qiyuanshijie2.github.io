@@ -1,3 +1,4 @@
+
 div,body{
 	padding-left: 0px;
 	padding-right: 0px;
@@ -70,7 +71,7 @@ div,body{
 	height: 100px;
 	top:60px;
 	left:80%;
-	display:none;
+	opacity:0;
 }
 #graffiti{
 	border: 0;
@@ -94,9 +95,8 @@ div,body{
 #bodyer{
 	top:0px;
 	float: top;
-	width: 80%;
+	width: 95%;
 	min-width: 800px;
-	height:800px;
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
@@ -136,20 +136,22 @@ div,body{
 }
 #navigation{
 	width: 60px;
-	height:80%;
-	position:fixed;
-	left: 7%;
-	top:10%;
+	height:600px;
+	min-height: 400px;
+	position:absolute;
+	left: 5%;
+	top:0px;
+	margin-top: 81px;
 	background-color: rgba(205,255,170,1.00);
-	display: none;
+	opacity: 0.00;
 }
 #footer{
-	float:top;
-	background-color: #53D1DC;
+	background-color:#000000;
 	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
-	z-index:inherit;
-	
+}
+a{
+	border: none;
+	text-decoration:none;
+	color: aqua;
 }
