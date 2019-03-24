@@ -36,7 +36,7 @@
 			    <div id="others_sort" class="others">分区:</div>
 			    <div id="others_time" class="others">时间</div>
 			    <div id="others_tipoff" class="others">举报</div>
-			  </div>
+			  </div>  
 			  <div id="article">
 			    我是您的文章内容表达的部分（可修改）（如果您学过html可以在浏览器(F12)控制台输入代码，本站会add所有article.innerHtml("script"来防止xss和csrf会被替换成10进制的html编码)，如果您只想拷贝文字请使用"仅粘贴文本"，如果您的粘贴包含格式，请选择"粘贴"（视浏览器不同而定））
 			  </div>

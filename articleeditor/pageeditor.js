@@ -5,8 +5,14 @@
 **/
 var mouseselection;
 var mouseelet;
-//测试代码
-//测试代码
+
+function comment_Checkbox_Onchang(){
+			if(document.getElementById("commentcheck").checked){
+				document.getElementById("creatcomment").innerHTML=" &nbsp;设置等级：<input type=\"text\" id=\"commentlevel\">";
+			}else{
+				document.getElementById("creatcomment").innerHTML="";
+			}
+		}
 //插入链接框
 function addoutlinks(){
 	"use strict";
@@ -76,7 +82,8 @@ function readyaddimage(){
 //添加提交框
 function addsubmit(){
 	var body=document.getElementById("dcbody");
-		body.innerHTML="<div id=\"addsubmit\"><h3 style=\"text-align: center\">准备提交文章</h3> 该文章是：   <input type='radio' name='articletype' value='self' id='articletype_0'> 原创</label><label><input type='radio' name='articletype' value='translate' id='articletype_1'>转译</label> <label><input type='radio' name='articletype' value='turn' id='articletype_2'> 转载</label><br>选择等级设定：	    <input type=\"radio\" name=\"levelsetting\" value=\"1\" id=\"levelsetting_0\">1</label><label><input type=\"radio\" name=\"levelsetting\" value=\"2\" id=\"levelsetting_1\">2</label><label> <input type=\"radio\" name=\"levelsetting\" value=\"3\" id=\"levelsetting_2\"> 3</label><label><input type=\"radio\" name=\"levelsetting\" value=\"4\" id=\"levelsetting_3\">4</label> <label><input type=\"radio\" name=\"levelsetting\" value=\"5\" id=\"levelsetting_4\"> 5</label><label><input type=\"radio\" name=\"levelsetting\" value=\"100\" id=\"levelsetting_5\">专业等级1</label><label><input type=\"radio\" name=\"levelsetting\" value=\"101\" id=\"levelsetting_5\">专业等级101</label><label><input type=\"radio\" name=\"levelsetting\" value=\"200\" id=\"levelsetting_5\">专业等级2</label>&nbsp;&nbsp;&nbsp;<a>tuhol.org等级条例</a><br> 添加分区：<input type=\"button\" class=\"uparticlesub\" value=\"分区选择\"><div id=\"sortselct\"></div><br>添加标签： <input type=\"text\" id=\"addtabs\" style=\"width:5%\">&nbsp;<input type=\"image\" alt=\"0\" value=\"添加标签\" onClick=\"addtab();return false;\"><div id=\"tabselect\"></div> <BR><BR><BR><BR><BR>限制的地区:&nbsp;<input type=\"text\" id=\"areaset\" style=\"width:20%\"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请添加两个字母的简写国家并加上\";\"例如：cn;us;uk;jp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;限制的地区仅仅对于专业等级以下的用户有效果<br>设置封面图片：<input type=\"file\" id=\"coverpicturefile\" onChange=Coverpictureupload();return false;>(封面图片会按比例缩放)<div id=\"coverpicture\" ></div><input type=\"image\" src=\"yes.jpg\"  style=\"float:left;width:10%;margin-left:10%\" onclick=\"uparticle();return false;\"><input type=\"image\" src=\"cancel.jpg\" onclick=\"removeele('addsubmit');return false\" style=\"float:right;width:10%;margin-right:10%\"></div></div>"+body.innerHTML;
+		body.innerHTML="<div id=\"addsubmit\"><h3 style=\"text-align: center\">准备提交文章</h3>该文章是：   <input type='radio' name='articletype' value='self' id='articletype_0'> 原创</label><label><input type='radio' name='articletype' value='translate' id='articletype_1'>转译</label> <label><input type='radio' name='articletype' value='turn' id='articletype_2'> 转载</label><br>选择等级设定：	    <input type=\"radio\" name=\"levelsetting\" value=\"1\" id=\"levelsetting_0\">1</label><label><input type=\"radio\" name=\"levelsetting\" value=\"2\" id=\"levelsetting_1\">2</label><label> <input type=\"radio\" name=\"levelsetting\" value=\"3\" id=\"levelsetting_2\"> 3</label><label><input type=\"radio\" name=\"levelsetting\" value=\"4\" id=\"levelsetting_3\">4</label> <label><input type=\"radio\" name=\"levelsetting\" value=\"5\" id=\"levelsetting_4\"> 5</label><label><input type=\"radio\" name=\"levelsetting\" value=\"100\" id=\"levelsetting_5\">专业等级1</label><label><input type=\"radio\" name=\"levelsetting\" value=\"101\" id=\"levelsetting_5\">专业等级101</label><label><input type=\"radio\" name=\"levelsetting\" value=\"200\" id=\"levelsetting_5\">专业等级2</label>&nbsp;&nbsp;&nbsp;<a>tuhol.org等级条例</a><br> 添加分区：<input type=\"button\" class=\"uparticlesub\" value=\"分区选择\"><div id=\"sortselct\"></div><input type=\"checkbox\" id=\"commentcheck\" onChange=\"comment_Checkbox_Onchang()\">是否创建评论区<span id=\"creatcomment\"></span><br>限制的地区:&nbsp;<input type=\"text\" id=\"areaset\" style=\"width:20%\"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请添加两个字母的简写国家并加上\";\"例如：cn;us;uk;jp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;限制的地区仅仅对于专业等级以下的用户有效果<br>添加标签： <input type=\"text\" id=\"addtabs\" style=\"width:5%\">&nbsp;<input type=\"image\" alt=\"0\" value=\"添加标签\" onClick=\"addtab();return false;\"><div id=\"tabselect\"></div><BR><BR><BR><BR><BR><br>设置封面图片：<input type=\"file\" id=\"coverpicturefile\" onChange=Coverpictureupload();return false;>(封面图片会按比例缩放)<div id=\"coverpicture\" ></div><input type=\"image\" src=\"yes.jpg\"  style=\"float:left;width:10%;margin-left:10%\" onclick=\"uparticle();return false;\"><input type=\"image\" src=\"cancel.jpg\" onclick=\"removeele('addsubmit');return false\" style=\"float:right;width:10%;margin-right:10%\"></div></div>"+body.innerHTML;
+		scrollTo(0,0);
 }
 
 //upratepiture

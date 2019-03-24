@@ -18,6 +18,7 @@ var uptabs;
 var title;
 var page_tips;
 var coverpicid="";
+var comment=-2;
 function addsort(){
 		//add the part area
 }
@@ -68,6 +69,9 @@ function addtab(){
 }
 function uparticle(){
 	var levelset=document.getElementsByName("levelsetting");
+	if(document.getElementById("commentcheck").checked){
+		comment=document.getElementById("commentlevel").value;
+		}
 	for(var i=0;i<levelset.length;i++){
 		if(levelset[i].checked==true){
 			var value=levelset[i].value;
@@ -84,7 +88,6 @@ function uparticle(){
 		}
 	}
 	contextarea=document.getElementById("areaset").value;
-	alert(contextarea);
 	uppicture();
 }
 //upload picture
@@ -111,6 +114,7 @@ function nextuparticle(){
 	var xhr = new XMLHttpRequest();
 	var url = "../articleeditor/addtosql.jsp";
 	xhr.open("post", url, true);
+	alert(article);
 	var form = new FormData(); // FormData 对象
 	//注意添加cover picture的获取方法
     form.append("coverpicid",coverpicid);
@@ -121,7 +125,9 @@ function nextuparticle(){
     form.append("article",article);
 	form.append("title",title);
 	form.append("page_tips",page_tips);
-	form.append("uptabs",uptabs);
+	form.append("uptabs",uptabs);	
+	form.append("sort",sort);
+	form.append("comment",comment);
 	xhr.overrideMimeType("application/octet-stream"); 
 	xhr.send(form);
 }

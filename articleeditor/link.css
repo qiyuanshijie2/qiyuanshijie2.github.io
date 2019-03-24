@@ -81,9 +81,9 @@ a{
 	color:aqua;
 }
 #addsubmit{
-	position: fixed;
-	margin-left: 20%;
-	width: 60%;
+	position:absolute;
+	margin-left: 5%;
+	width: 90%;
 	margin-top: 5%;
 	background-color: rgba(50,50,50,0.90);
 	border-style:groove;
